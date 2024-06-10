@@ -9,5 +9,13 @@
 {
   @Html.LabelFor(model => model.Media);
   @Html.TextBoxFor(model => model.Media);
+  @Html.LabelFor(model => model.Depicts);
+  @Html.TextBoxFor(model => model.Depicts);
+  @Html.LabelFor(model => model.SizeX);
+  @Html.TextBoxFor(model => model.SizeX);
+  @Html.LabelFor(model => model.SizeY);
+  @Html.TextBoxFor(model => model.SizeY);
+  @Html.LabelFor(model => model.OnWall);
+  @Html.CheckBoxFor(model => model.OnWall);
   <input type="submit" value="Add new item"/>
 }

@@ -4,10 +4,9 @@ namespace PosterInventory.Models
 	{
 		public int PosterId { get; set; }
 		public string Media { get; set; }
-		
-		public Poster(string media)
-		{
-			Media = media;
-		}
+		public string Depicts { get; set; }
+		public int SizeX { get; set; }
+		public int SizeY { get; set; }
+		public bool OnWall { get; set; }
 	}
 }
