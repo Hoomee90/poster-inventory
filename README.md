@@ -1,8 +1,8 @@
-# Title
+# Poster Inventory
 
 #### By **Samantha Callie**
 
-#### Subtitle
+#### Track your posters
 
 ## Technologies Used
 
@@ -12,6 +12,7 @@
 * .NET
 * ASP.NET Core
 * Razor
+* SQL
 
 ## Description
 
@@ -28,6 +29,10 @@ Description
 ## Known Bugs
 
 * There are no known bugs at this time
+
+## Database Schema
+
+![image of a table with properties 'id', 'media', 'depicts', 'size_x', 'siz_y', 'on_wall"](PosterInventory/wwwroot/img/image-1.png)
 
 ## License
 
