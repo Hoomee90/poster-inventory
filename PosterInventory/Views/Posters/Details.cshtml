@@ -1,0 +1,10 @@
+@{
+  Layout = "_Layout";
+}
+
+@model PosterInventory.Models.Poster
+
+<h2>Details</h2>
+
+<h3>@Html.DisplayNameFor(model => model.Media): @Html.DisplayFor(model => model.Media)</h3>
+<p>@Html.ActionLink("Back to list", "Index")</p>

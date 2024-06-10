@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+
+@model PosterInventory.Models.Poster
+
+<h4>Placeholder</h4>
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Media);
+  @Html.TextBoxFor(model => model.Media);
+  <input type="submit" value="Add new item"/>
+}

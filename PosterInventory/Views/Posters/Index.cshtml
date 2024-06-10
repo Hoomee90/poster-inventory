@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+@using PosterInventory.Models;
+
+<h1>Placeholder</h1>
+
+<ul>
+  @foreach (Poster poster in Model)
+  {
+    <li>@Html.ActionLink($"{poster.Media}", "Details", new { id = poster.PosterId })</li>
+  }
+</ul>
+
+
+<p>@Html.ActionLink("Add new", "Create")</p>
