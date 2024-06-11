@@ -1,12 +1,12 @@
 input:not([type="checkbox"]) {
   display: block;
-  margin: 3px 0px;
+  margin: 2px 0px;
 }
 
 label[for="OnWall"] {
-  margin-left: 0.5em;
+  margin: 8px 4px;
 }
 
-input.check-box {
+input[type="checkbox"]:disabled {
   filter: invert(100%) brightness(5);
 }

@@ -15,12 +15,12 @@
   @Html.TextBoxFor(model => model.Media);
   @Html.LabelFor(model => model.Depicts);
   @Html.TextBoxFor(model => model.Depicts);
-  @Html.LabelFor(model => model.SizeX);
+  @Html.LabelFor(model => model.SizeX, "Width");
   @Html.TextBoxFor(model => model.SizeX);
-  @Html.LabelFor(model => model.SizeY);
+  @Html.LabelFor(model => model.SizeY, "Height");
   @Html.TextBoxFor(model => model.SizeY);
   @Html.CheckBoxFor(model => model.OnWall);
-  @Html.LabelFor(model => model.OnWall);
+  @Html.LabelFor(model => model.OnWall, "On Wall?");
   <input type="submit" value="Add new item"/>
 }
 
