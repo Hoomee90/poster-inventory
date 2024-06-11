@@ -7,6 +7,10 @@
 <h4>Placeholder</h4>
 @using (Html.BeginForm())
 {
+  IDictionary<string, string> HtmlAttributes = new Dictionary<string, string>();
+  HtmlAttributes.Add("type", "number");
+  @Html.LabelFor(model => model.Name);
+  @Html.TextBoxFor(model => model.Name);
   @Html.LabelFor(model => model.Media);
   @Html.TextBoxFor(model => model.Media);
   @Html.LabelFor(model => model.Depicts);
@@ -15,7 +19,9 @@
   @Html.TextBoxFor(model => model.SizeX);
   @Html.LabelFor(model => model.SizeY);
   @Html.TextBoxFor(model => model.SizeY);
-  @Html.LabelFor(model => model.OnWall);
   @Html.CheckBoxFor(model => model.OnWall);
+  @Html.LabelFor(model => model.OnWall);
   <input type="submit" value="Add new item"/>
 }
+
+<p>@Html.ActionLink("Back to List", "Index")</p>

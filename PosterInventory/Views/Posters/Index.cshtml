@@ -4,12 +4,12 @@
 
 @using PosterInventory.Models;
 
-<h1>Placeholder</h1>
+<h1>Posters</h1>
 
 <ul>
   @foreach (Poster poster in Model)
   {
-    <li>@Html.ActionLink($"{poster.Media}", "Details", new { id = poster.PosterId })</li>
+    <li>@Html.ActionLink($"{poster.Name}", "Details", new { id = poster.PosterId })</li>
   }
 </ul>
 

@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Authorization.Infrastructure;
+
 namespace PosterInventory.Models
 {
 	public class Poster
 	{
 		public int PosterId { get; set; }
+		public string Name { get; set;}
 		public string Media { get; set; }
 		public string Depicts { get; set; }
 		public int SizeX { get; set; }
