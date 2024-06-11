@@ -1,4 +1,4 @@
-input:not([type="checkbox"]) {
+input:not([type="checkbox"]), textarea {
   display: block;
   margin: 2px 0px;
 }
