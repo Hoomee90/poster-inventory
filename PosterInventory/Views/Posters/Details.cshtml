@@ -4,8 +4,10 @@
 
 @model PosterInventory.Models.Poster
 
-<h2>Details</h2>
+<h2>Poster Details</h2>
 
 <h3>@Html.DisplayNameFor(model => model.Media): @Html.DisplayFor(model => model.Media)</h3>
 <p>@Html.DisplayNameFor(model => model.Depicts): @Html.DisplayFor(model => model.Depicts)</p>
+<p>Size: @Html.DisplayFor(model => model.SizeX) x @Html.DisplayFor(model => model.SizeY)</p>
+<p>On Wall? @Html.DisplayFor(model => model.OnWall)</p>
 <p>@Html.ActionLink("Back to list", "Index")</p>

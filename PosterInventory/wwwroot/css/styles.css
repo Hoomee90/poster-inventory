@@ -1,0 +1,8 @@
+input:not([type="checkbox"]) {
+  display: block;
+  margin: 3px 0px;
+}
+
+label[for="OnWall"] {
+  margin-left: 0.5em;
+}
