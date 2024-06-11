@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Authorization.Infrastructure;
-
 namespace PosterInventory.Models
 {
 	public class Poster
