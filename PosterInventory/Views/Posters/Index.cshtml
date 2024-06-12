@@ -5,12 +5,37 @@
 @using PosterInventory.Models;
 
 <h1>Posters</h1>
+<p>Click a name for details</p>
 
-<ul>
-  @foreach (Poster poster in Model)
-  {
-    <li>@Html.ActionLink($"{poster.Name}", "Details", new { id = poster.PosterId }) @poster.Media - @poster.SizeX x @poster.SizeY</li>
-  }
+<ul class="list-group list-group-item-light">
+  <table>
+    <tr>
+      <th>
+        <p>Name</p>
+      </th>
+      <th>
+        <p>Media</p>
+      </th>
+      <th>
+        <p>Size</p>
+      </th>
+    </tr>
+    
+      @foreach (Poster poster in Model) 
+      {
+      <tr>
+        <td>
+          @Html.ActionLink(poster.Name, "Details", new { id=poster.PosterId }, new { @class = "list-group-item list-group-item-action" })
+        </td>
+        <td>
+          <li class="list-group-item">@Html.DisplayFor(model => poster.Media)</li>
+        </td>
+        <td>
+          <li class="list-group-item">@Html.DisplayFor(model => poster.SizeX) x @Html.DisplayFor(model => poster.SizeX)</li>
+        </td>
+      </tr>
+      }
+  </table>
 </ul>
 
 <p>@Html.ActionLink("Add new", "Create")</p>
