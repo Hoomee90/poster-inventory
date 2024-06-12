@@ -9,7 +9,7 @@
 <ul>
   @foreach (Poster poster in Model)
   {
-    <li>@Html.ActionLink($"{poster.Name}", "Details", new { id = poster.PosterId })</li>
+    <li>@Html.ActionLink($"{poster.Name}", "Details", new { id = poster.PosterId }) @poster.Media - @poster.SizeX x @poster.SizeY</li>
   }
 </ul>
 
