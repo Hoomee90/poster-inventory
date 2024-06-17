@@ -17,7 +17,7 @@
 
 ## Description
 
-Description
+This site allows users to fill out a form to create poster objects with various attributes. It can list these poster, and the user can click on them for details.
 
 ## Setup/Installation Requirements
 
